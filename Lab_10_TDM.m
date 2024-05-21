@@ -1,0 +1,26 @@
+clc
+n1=input ('Enter the length= ');
+n2=input ('Enter the length= ');
+n3=input ('Enter the length= ');
+t=0:0.01:n1;
+t1=1:0.01:n2;
+t2=2:0.01:n3;
+x=sin (2*pi*t);
+y=sin (4*pi*t1);
+z=sin (6*pi*t2);
+subplot(411);
+plot(t,x,'g');
+title('USER 1');
+grid on;
+subplot(412);
+plot(t1,y,'r');
+title('USER 2');
+grid on;
+subplot(413);
+plot(t2,z);
+title('USER 3');
+grid on;
+subplot(414);
+plot(t,x,'g',t1,y,'r',t2,z);
+title('TIME DIVISION MULTIPLEXING');
+grid on;
